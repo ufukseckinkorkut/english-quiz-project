@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> English Quiz Page Example </title>
+    <style> 
+
+.flashcards-container {
+        display: flex;
+        justify-content: space;
+        flex-wrap: wrap;
+     }
+    .flashcard {
+        width: 250px;
+        height: 115px;
+        border: 1px solid #ccc;
+        margin: 10px;
+        text-align: center;
+        cursor:crosshair;
+    }
+    .front {
+        background-color: darkcyan;
+        padding: 20px;
+        font-size: 23px;    
+        
+    }
+    .back {
+        color: azure;
+        display: none;
+        padding: 10px;
+    }
+    .flashcard:hover .back {
+        display: block; 
+        
+    }
+
+    #kutu{
+    width:150px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:aqua;
+    color:#0f0f0f;
+    margin:2px;
+    padding:5px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 12px  grey;
+    text-align:center;
+    }
+
+    #k_kutu{
+    width:200px;
+    background-color: coral;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    </style>
+    
+    
+
+</head>
+<body style="background-color: #0f0f0f;">
+<div style="font-size:85px; text-align: center; color: lightgray; font-family: 'Courier New', Courier, monospace;"> <b>QuizSite</b> </div>
+<hr>
+<p style="color: #ccc; font-size: 20px;">Hoş geldiniz! Küçük bir İngilizce kelime pratiğine ne dersiniz?</p>
+<h5 style="color: #ccc; font-size: 15px;">Nasıl oynanır?</h5>
+<li style="color: #ccc;">
+    <ol>
+        <li>İstediğiniz kategoriyi seçin.</li>
+        <li>İngilizce kelimeleri önce kendiniz bilmeye çalışın, sonra fare imlecinizi kelimenin üzerine götürerek Türkçe anlamına bakın.</li>
+    </ol>
+</li>
+<div id="top"></div>
+<h2 style="color: aliceblue;">Kategoriler</h2>
+<a href="#meyve" style="color: azure; font-size: 22px;" id="k_kutu">- Meyveler</a> <br><br>
+<a href="#esya" style="color: azure; font-size: 22px;" id="k_kutu">- Eşyalar</a> <br><br>
+<a href="#hayvan" style="color: azure; font-size: 22px;" id="k_kutu">- Hayvanlar</a> <br><br>
+<a href="#yiyecek" style="color: azure; font-size: 22px;" id="k_kutu">- Yiyecekler</a> <br><br>
+<a href="#hava" style="color: azure; font-size: 22px;" id="k_kutu">- Hava</a> <br><br>
+<br><br><br><br><div id="meyve"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div style="color: white; font-family:'Brush Script MT', cursive; font-size:30px;">Meyveler/Fruits</div>
+
+<!--Meyveler-->
+<div class="flashcards-container">   
+    <div class="flashcard"> 
+        <div class="front"> Apple </div>
+        <div class="back"> Elma </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Pear </div>
+        <div class="back"> Armut </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Strawberry </div>
+        <div class="back"> Çilek </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Watermelon </div>
+        <div class="back"> Karpuz </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Pineapple </div>
+        <div class="back"> Ananas </div>
+    </div>
+    <div class="flashcard"> 
+        <div class="front"> Melon </div>
+        <div class="back"> Kavun </div>
+    </div>
+</div>
+
+<br>
+<a href="#top" id="kutu">Kategorilere dön.</a>
+<a href="#nextesya" id="kutu">Sonraki</a>
+
+
+<br><br><br><br><div id="esya"><div id="nextesya"></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Esyalar-->
+<div style="color: white; font-family:'Brush Script MT', cursive; font-size:30px;">Eşyalar/Objects</div>
+<div class="flashcards-container">   
+    <div class="flashcard"> 
+        <div class="front"> Pencil </div>
+        <div class="back"> Kalem </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Keyboard </div>
+        <div class="back"> Klavye </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Book </div>
+        <div class="back"> Kitap </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Wallet </div>
+        <div class="back"> Cüzdan </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Computer </div>
+        <div class="back"> Bilgisayar </div>
+    </div>
+    <div class="flashcard"> 
+        <div class="front"> Sunglasses </div>
+        <div class="back"> Güneş gözlüğü </div>
+    </div>
+</div>
+<br>
+<a href="#meyve" id="kutu">Önceki</a>
+<a href="#top" id="kutu">Kategorilere dön.</a>
+<a href="#nexthayvan" id="kutu">Sonraki</a>
+
+
+
+<br><br><br><br><div id="hayvan"><div id="nexthayvan"></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Hayvanlar-->
+<div style="color: white; font-family:'Brush Script MT', cursive; font-size:30px;">Hayvanlar/Animals</div>
+<div class="flashcards-container">   
+    <div class="flashcard"> 
+        <div class="front"> Cat </div>
+        <div class="back"> Kedi </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Dog </div>
+        <div class="back"> Köpek </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Giraffe </div>
+        <div class="back"> Zürafa </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Horse </div>
+        <div class="back"> At </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Tiger </div>
+        <div class="back"> Kaplan </div>
+    </div>
+    <div class="flashcard"> 
+        <div class="front"> Butterfly </div>
+        <div class="back"> Kelebek </div>
+    </div>
+</div>
+<br>
+<a href="#esya" id="kutu">Önceki</a>
+<a href="#top" id="kutu">Kategorilere dön.</a>
+<a href="#nextyiyecek" id="kutu">Sonraki</a>
+
+<br><br><br><br><div id="yiyecek"><div id="nextyiyecek"></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Yiyecekler-->
+<div style="color: white; font-family:'Brush Script MT', cursive; font-size:30px;">Yiyecekler/Food</div>
+<div class="flashcards-container">   
+    <div class="flashcard"> 
+        <div class="front"> Egg </div>
+        <div class="back"> Yumurta </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Cucumber </div>
+        <div class="back"> Salatalık </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Sausage </div>
+        <div class="back"> Sosis </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Bread </div>
+        <div class="back"> Ekmek </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Eggplant </div>
+        <div class="back"> Patlıcan </div>
+    </div>
+    <div class="flashcard"> 
+        <div class="front"> Butter </div>
+        <div class="back"> Tereyağı </div>
+    </div>
+</div>
+<a href="#hayvan" id="kutu">Önceki</a>
+<a href="#top" id="kutu">Kategorilere dön.</a>
+<a href="#nexthavad" id="kutu">Sonraki</a>
+
+
+<br><br><br><br><div id="hava"><div id="nexthavad"></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Hava-->
+<div style="color: white; font-family:'Brush Script MT', cursive; font-size:30px;">Hava Durumu/Weather</div>
+<div class="flashcards-container">   
+    <div class="flashcard"> 
+        <div class="front"> Rainy </div>
+        <div class="back"> Yağmurlu </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Cloudy </div>
+        <div class="back"> Bulutlu </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Misty </div>
+        <div class="back"> Sisli </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Snowy </div>
+        <div class="back"> Karlı </div>
+    </div>
+    <div class="flashcard">
+        <div class="front"> Stormy </div>
+        <div class="back"> Fırtınalı </div>
+    </div>
+    <div class="flashcard"> 
+        <div class="front"> Windy </div>
+        <div class="back"> Rüzgarlı </div>
+    </div>
+</div>
+<a href="#yiyecek" id="kutu">Önceki</a>
+<a href="#top" id="kutu">Kategorilere dön.</a>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
